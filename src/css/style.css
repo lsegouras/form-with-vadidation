@@ -54,7 +54,7 @@ main{
     margin-right: 50px;
 }
 
-.form .inputText{
+.form .inputText, #message{
     width: 298px;
     height: 35.11px;
     border-radius: 5px;
@@ -63,12 +63,20 @@ main{
     padding: 10px;
 }
 
+#message{
+    height: 75px;   
+    overflow-y: hidden;
+    resize: none;
+}
+
 .form .inputText::placeholder{
     position: absolute;
 }
 
-#message.inputText{
-    height: 100px;
+#message::placeholder{
+    color: grey;
+    font-size: 13.3px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form p.requiredFields{
